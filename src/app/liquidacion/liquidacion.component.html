@@ -1,0 +1,60 @@
+<p>liquidacion works!</p>
+
+<section class="content">
+    <h2>Agregar Tiquetes</h2>
+<div class="row">
+    <div class="col-md-6">
+        <div class="box box-primary">
+            <div class="box-body">
+                <div class="form-group">
+                    <label><b>Nombre niño:</b></label>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="liquidacion.Nombre" class="form-control" placeholder="Ingrese Nombre">
+                </div>
+                <div class="form-group">
+                    <label><b>Salario padre de familia:</b></label>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="liquidacion.Salario" class="form-control" placeholder="Ingrese Salario">
+                </div>
+                <div class="form-group">
+                    <Label><b>Tipo de actividad:</b></Label>
+                </div>
+                <div class="form-group">
+                    <select [(ngModel)]="liquidacion.TipoActividad">
+                        <option value="Clases de natacion">Clases de natacion</option>
+                        <option value="Clases de futbol">Clases de futbol</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label><b>Dias de asistencia al curso: max 60</b></label>
+                </div>
+                <div class="form-group">
+                    <input [(ngModel)]="liquidacion.DiasAsistencia" class="form-control" placeholder="Ingrese Dias de Asistencia">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="box box-primary">
+            <div class="box-body">
+
+            </div>
+        </div>
+    </div>        
+</div>
+<div id="tablaBotones">
+    <table >
+        <tr>
+            <td>
+                <button (click)="add()" class="btn btn-primary">Registrar</button>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <button class="btn btn-danger">Cancelar</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</section>

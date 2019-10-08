@@ -1,0 +1,28 @@
+<p>consulta-liquidacion works!</p>
+
+<div>
+    <h6 class="h6"> Lista de matriculados registrados</h6>
+  </div>
+  <div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>Id Matricula</th>
+          <th>Nombre Niño</th>
+          <th>Salario Padre Familia</th>
+          <th>Tipo Actividad</th>
+          <th>Dias Asistencia</th>
+          <th>Valor Matricula</th>
+  
+        </tr>
+      </thead>
+      <tr *ngFor="let liquidacion of liquidaciones">
+        <td>{{liquidacion.idMatricula}}</td>
+        <td>{{liquidacion.Nombre}}</td>
+        <td>{{liquidacion.Salario}}</td>
+        <td>{{liquidacion.TipoActividad}}</td>
+        <td>{{liquidacion.DiasAsistencia}}</td>
+        <td>{{liquidacion.ValorMatricula}}</td>
+      </tr>
+    </table>
+  </div>
